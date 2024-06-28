@@ -1,0 +1,91 @@
+* { font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-attachment: fixed;
+  background-image: url(/images/fondo_2.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  width: 20%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0px 12px;
+  text-align: left;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0px;
+  width: 60%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  padding: 20px 0px;
+}
+
+input, label {
+  height: 20px;
+  margin: 8px;
+  padding: 8px;
+}
+
+input, textarea {
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  outline: 0px !important;
+}
+
+textarea {
+  margin: 8px;
+  padding: 8px;
+}
+
+label {
+  min-width: 100px;
+}
+
+.submit {
+  background-color: #1596cf;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  grid-column: 2/3;
+  height: fit-content;
+  letter-spacing: .1em;
+  outline: 0 !important;
+  padding: 18px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+:required { border-color: orange; }
+:focus { border-color: cyan; }
+:optional, :valid { border-color: #08fe00 }
+:disabled { border-color: gray; }
